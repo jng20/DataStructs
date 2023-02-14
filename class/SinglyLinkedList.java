@@ -169,7 +169,7 @@ public class SinglyLinkedList<E> implements Cloneable {
       size = 0;
       return answer;
     }
-    while(!temp.getNext().equals(tail)){
+    while(!temp.getNext() != (tail)){
       temp = temp.getNext();
     }
     tails = temp;
